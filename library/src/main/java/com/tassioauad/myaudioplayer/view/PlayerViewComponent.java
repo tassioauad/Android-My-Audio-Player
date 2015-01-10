@@ -1,4 +1,4 @@
-package com.tassioauad.library.view;
+package com.tassioauad.myaudioplayer.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
-import com.tassioauad.library.AudioEntity;
-import com.tassioauad.library.AudioPlayer;
-import com.tassioauad.library.AudioPlayerListener;
-import com.tassioauad.library.R;
+import com.tassioauad.myaudioplayer.AudioEntity;
+import com.tassioauad.myaudioplayer.AudioPlayer;
+import com.tassioauad.myaudioplayer.AudioPlayerListener;
+import com.tassioauad.myaudioplayer.R;
 
 import java.io.IOException;
 import java.util.List;

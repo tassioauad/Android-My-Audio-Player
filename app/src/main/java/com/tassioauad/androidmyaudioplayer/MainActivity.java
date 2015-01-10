@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.tassioauad.library.AudioEntity;
-import com.tassioauad.library.view.PlayerViewComponent;
+import com.tassioauad.myaudioplayer.AudioEntity;
+import com.tassioauad.myaudioplayer.view.PlayerViewComponent;
 
 import java.util.ArrayList;
 import java.util.List;

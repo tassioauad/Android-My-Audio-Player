@@ -1,4 +1,4 @@
-package com.tassioauad.library;
+package com.tassioauad.myaudioplayer;
 
 /**
  * Created by TássioAuad on 27/12/2014.

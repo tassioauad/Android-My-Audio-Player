@@ -1,4 +1,4 @@
-package com.tassioauad.library;
+package com.tassioauad.myaudioplayer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
