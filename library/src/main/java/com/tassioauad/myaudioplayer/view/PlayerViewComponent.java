@@ -34,6 +34,8 @@ public class PlayerViewComponent extends LinearLayout {
     private LinearLayout linearLayoutPlayerButtons;
     private LinearLayout linearLayoutPlayerLoading;
     private static AudioPlayer audioPlayer;
+    private static View view;
+
     private AudioPlayerListener audioPlayerListener = new AudioPlayerListener() {
         @Override
         public void onPlay(AudioEntity audioEntity) {
@@ -130,6 +132,10 @@ public class PlayerViewComponent extends LinearLayout {
         audioPlayer.addListener(listener);
     }
 
+    public void setCustomView(View view) {
+        this.view = view;
+    }
+
     public void play(int track) throws IOException {
         audioPlayer.play(track);
     }
@@ -143,7 +149,11 @@ public class PlayerViewComponent extends LinearLayout {
 
         //Getting UI Elements
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.playerviewcomponent, null);
+
+        if(view == null) {
+            view = layoutInflater.inflate(R.layout.playerviewcomponent, null);
+        }
+
         view.setLayoutParams(getLayoutParams());
         imageViewAudioImage = (ImageView) view.findViewById(R.id.audioImage);
         linearLayoutPlayerButtons = (LinearLayout) view.findViewById(R.id.playerButtons);
